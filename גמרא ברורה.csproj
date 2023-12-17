@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>גמרא_ברורה</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="arraycode.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\contradiction - transparent.png" />
+    <None Remove="Resources\contradiction.png" />
+    <None Remove="Resources\other-tranparent.png" />
+    <None Remove="Resources\other.png" />
+    <None Remove="Resources\proof - transparent.png" />
+    <None Remove="Resources\proof.png" />
+    <None Remove="Resources\question-transparent.png" />
+    <None Remove="Resources\question.png" />
+    <None Remove="Resources\statement - transparent.png" />
+    <None Remove="Resources\statement.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\contradiction - transparent.png" />
+    <Resource Include="Resources\contradiction.png" />
+    <Resource Include="Resources\other-tranparent.png" />
+    <Resource Include="Resources\other.png" />
+    <Resource Include="Resources\proof - transparent.png" />
+    <Resource Include="Resources\proof.png" />
+    <Resource Include="Resources\question-transparent.png" />
+    <Resource Include="Resources\question.png" />
+    <Resource Include="Resources\statement - transparent.png" />
+    <Resource Include="Resources\statement.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
